@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="Customer" class="com.sample.myspring.beans.Customer"
+		scope="prototype">
+		<constructor-arg value="Srinivas"></constructor-arg>
+		<constructor-arg value="Muthyam"></constructor-arg>
+		<property name="balance" value="5000"></property>
+	</bean>
+	<bean id="address" class="com.sample.myspring.beans.Address"
+		scope="prototype">
+		<property name="street" value="sample street"></property>
+		<property name="city" value="hyderabad"></property>
+		<property name="state" value="ap"></property>
+		<property name="zip" value="54321"></property>
+	</bean>
+</beans>
